@@ -169,13 +169,16 @@ def player_stats(testname)
     end
   end
   
-  def big_shoe_rebounds
-    game_hash.each do |level1,level2|
-      level2[:players].each do |shoes|
-        
-          return [:rebounds]
+def big_shoe_rebounds
+  arr =[]
+    game_hash.each do |key1,value1|
+      value1[:players].each do |key2|
+       arr << key2[:rebounds]
+       if key2[:rebounds] == arr.max
+       return key2[:player_name]
       end
     end
   end
+end
   
   
