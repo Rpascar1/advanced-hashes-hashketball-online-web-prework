@@ -172,7 +172,7 @@ def player_stats(testname)
   def big_shoe_rebounds
     game_hash.each do |level1,level2|
       level2[:players].each do |shoes|
-        if shoes[:shoe] == [:shoe].max
+        
           return [:rebounds]
       end
     end
