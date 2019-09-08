@@ -175,7 +175,7 @@ def big_shoe_rebounds
       value1[:players].each do |key2|
        arr << key2[:rebounds]
        if key2[:rebounds] == arr.max
-       return key2[:player_name]
+       return key2[:rebounds]
       end
     end
   end
