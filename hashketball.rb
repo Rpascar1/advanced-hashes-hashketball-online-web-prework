@@ -173,8 +173,8 @@ def big_shoe_rebounds
   arr =[]
     game_hash.each do |key1,value1|
       value1[:players].each do |key2|
-       arr << key2[:rebounds]
-       if key2[:rebounds] == arr.max
+       arr << key2[:shoe]
+       if key2[:shoe] == arr.max
        return key2[:rebounds]
       end
     end
